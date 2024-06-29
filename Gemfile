@@ -51,6 +51,10 @@ end
 
 group :development do
   gem "annotate"
+  gem "i18n_generators"
+  gem "bootstrap", '~> 5.3.0'
+  gem "http_accept_language"
+  gem "sassc-rails"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
