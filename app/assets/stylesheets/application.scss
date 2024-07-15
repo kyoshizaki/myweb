@@ -72,3 +72,16 @@ textarea {
 // .command-button {
 //     display:inline-block;
 // }
+
+a.btn:visited {
+    color: #fff;
+}
+
+.signin-form input[type='text'] {
+    margin-right: 4px;
+    width: 120px;
+}
+
+.signin-form {
+    margin-bottom: 4px;
+}
