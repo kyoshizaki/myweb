@@ -8,10 +8,16 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
+user = User.create(signin_name: 'user1',
+    display_name: '分大太郎',
+    password: 'bundai',
+    password_confirmation: 'bundai')
+
 5.times do |i|
-    Post.create(title: "title #{i}", body: "body #{i}")
+    user.posts.create(title: "title #{i}", body: "body #{i}")
 end
 
 3.times do |i|
     Post.find(1).comments.create(body: "comment body #{i}")
 end
+
